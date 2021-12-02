@@ -23,12 +23,13 @@ namespace CityDistrictJson
             if (this.ActiveMdiChild != null)
             {
                 this.ActiveMdiChild.Hide();
-                FormCitySearch formCitySearch = new FormCitySearch();
-                formCitySearch.MdiParent = this;
-                formCitySearch.Show();
-                this.LayoutMdi(MdiLayout.TileVertical);
 
             }
+            FormCitySearch formCitySearch = new FormCitySearch();
+            formCitySearch.MdiParent = this;
+            formCitySearch.Show();
+            this.LayoutMdi(MdiLayout.TileVertical);
+
         }
     }
 }
