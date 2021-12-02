@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CityDistrictJsonBLL
 {
-    class CityDistricyService
+    class CityDistrictService
     {
     }
 }

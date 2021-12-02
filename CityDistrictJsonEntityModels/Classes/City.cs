@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace CityDistrictJsonEntityModels.Classes
 {
-    class City
+    public class City
     {
+        public string cityName { get; set; }
+        public string plateCode { get; set; }
+        public List<string> Districts { get; set; }
+
     }
 }

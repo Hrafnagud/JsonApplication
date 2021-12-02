@@ -70,6 +70,7 @@ namespace CityDistrictJson
             this.searchCityToolStripMenuItem.Name = "searchCityToolStripMenuItem";
             this.searchCityToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.searchCityToolStripMenuItem.Text = "Search City";
+            this.searchCityToolStripMenuItem.Click += new System.EventHandler(this.searchCityToolStripMenuItem_Click);
             // 
             // searchDistrictToolStripMenuItem
             // 
