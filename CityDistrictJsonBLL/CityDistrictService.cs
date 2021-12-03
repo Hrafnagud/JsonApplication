@@ -23,7 +23,7 @@ namespace CityDistrictJsonBLL
             using (WebClient client = new WebClient())
             {
                 //byte[] data = client.DownloadData(System.Windows.Forms.Application.StartupPath + "/municipalitiesFull.json");
-                byte[] data = client.DownloadData(@"C:\Users\103SABAH_EMRE\source\repos\JsonApplication\municipalitiesFull.json");
+                byte[] data = client.DownloadData(@"C:\Users\Hrafnagud\source\repos\NetworkAcademy\December\3\municipalitiesFull.json");
                 JsonString = Encoding.UTF8.GetString(data);
             }
         }
