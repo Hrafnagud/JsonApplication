@@ -20,11 +20,8 @@ namespace CityDistrictJsonBLL
         {
             using (WebClient client = new WebClient())
             {
-<<<<<<< HEAD
                 byte[] data = client.DownloadData(@"C:\Users\Hrafnagud\source\repos\NetworkAcademy\December\3\municipalities.json");
-=======
-                byte[] data = client.DownloadData(@"C:\Users\Hrafnagud\source\repos\NetworkAcademy\December\2\JsonApplication\municipalities.json");
->>>>>>> 012efda101f8144d19dff4f2dbcf02e304320b34
+
                 //Turkish content of Json can be corrupted while translation. Encoding provides solution for this issue.
                 JSonString = Encoding.UTF8.GetString(data);
             }
