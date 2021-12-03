@@ -8,15 +8,15 @@ namespace CityDistrictJsonEntityModels.Classes
 {
     public class CityDistrictInfo
     {
-        public string plateCode { get; set; }
-        public string name { get; set; }
-        public string contactNumber { get; set; }
-        public string fax { get; set; }
-        public string mail { get; set; }
-        public string web { get; set; }
-        public string population { get; set; }
-        public string areaCode { get; set; }
-        public string area { get; set; }
-        public string information { get; set; }
+        public byte PlateCode { get; set; }
+        public string Name { get; set; }
+        public string ContactNumber { get; set; }
+        public string Fax { get; set; }
+        public string Mail { get; set; }
+        public string Web { get; set; }
+        public string Population { get; set; }
+        public string AreaCode { get; set; }
+        public string Area { get; set; }
+        public string Information { get; set; }
     }
 }
