@@ -59,9 +59,10 @@ namespace CityDistrictJsonBLL
             List<CityDistrictInfo> CityDistrictList = new List<CityDistrictInfo>();
             JObject j = JObject.Parse(JsonString);
             //encoding is required again for json.
-            cityName = LanguageCompatibility.TranslateTurkishCharsToEnglish(cityName);
 
-            List<string> myDistrictList = cityService.ListCities().Single(x => x.CityName == cityName).CityDistricts;
+            List<string> myDistrictList = cityService.ListCities().Single(x => x.CityName == cityName).CityDistricts;    
+            cityName = LanguageCompatibility.TranslateTurkishCharsToEnglish(cityName.ToLower());
+
 
             myDistrictList = myDistrictList.Select(x => LanguageCompatibility.TranslateTurkishCharsToEnglish(x.ToLower())).ToList();
 
@@ -72,12 +73,12 @@ namespace CityDistrictJsonBLL
                 {
                     CityDistrictInfo myInfo = new CityDistrictInfo();
                     myInfo.Name = data["belediye-ismi"] == null ? "" : data["belediye-ismi"].ToObject<string>();
-                    myInfo.ContactNumber = data["belediye-tel"].ToObject<string>();
-                    myInfo.Fax = data["belediye-faks"].ToObject<string>();
+                    myInfo.ContactNumber = data["belediye-tel"] == null ? "" : data["belediye-tel"].ToObject<string>();
+                    myInfo.Fax = data["belediye-faks"] == null ? "" : data["belediye-faks"].ToObject<string>();
                     myInfo.Mail = data["belediye-mail"] == null ? "" : data["belediye-mail"].ToObject<string>();
                     myInfo.Web = data["belediye-web"] == null ? "" : data["belediye-web"].ToObject<string>();
                     myInfo.Population= data["nufus"].ToObject<string>();
-                    myInfo.Information = data["bilgi"].ToObject<string>();
+                    myInfo.Information = data["bilgi"] == null ? "" : data["bilgi"].ToObject<string>();
                     CityDistrictList.Add(myInfo);
                 }
             }
