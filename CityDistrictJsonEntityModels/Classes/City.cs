@@ -8,9 +8,9 @@ namespace CityDistrictJsonEntityModels.Classes
 {
     public class City
     {
-        public string cityName { get; set; }
-        public string plateCode { get; set; }
-        public List<string> Districts { get; set; }
+        public string CityName { get; set; }
+        public byte PlateCode { get; set; }
+        public List<string> CityDistricts { get; set; }
 
     }
 }

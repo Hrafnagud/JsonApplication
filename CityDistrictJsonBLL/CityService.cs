@@ -28,7 +28,18 @@ namespace CityDistrictJsonBLL
 
         public List<City> ListCities()
         {
-            return JsonConvert.DeserializeObject<List<City>>(JSonString);
+            List<City> CityList = new List<City>();
+            var jsonData = JsonConvert.DeserializeObject<List<CityJson>>(JSonString);
+            foreach (var item in jsonData)
+            {
+                CityList.Add(new City()
+                {
+                    CityName = item.il,
+                    PlateCode = Convert.ToByte(item.plaka),
+                    CityDistricts = item.ilceleri
+                }) ;
+            }
+            return CityList;
         }
     }
 }

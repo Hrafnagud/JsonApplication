@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityDistrictJson", "CityDistrictJson\CityDistrictJson.csproj", "{68700C1E-7BB6-4F05-AA49-1FB3494B748D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CityDistrictJson", "CityDistrictJson\CityDistrictJson.csproj", "{68700C1E-7BB6-4F05-AA49-1FB3494B748D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityDistrictJsonEntityModels", "CityDistrictJsonEntityModels\CityDistrictJsonEntityModels.csproj", "{B6DCD13F-801A-4D59-B8B5-47212F8A9AE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CityDistrictJsonEntityModels", "CityDistrictJsonEntityModels\CityDistrictJsonEntityModels.csproj", "{B6DCD13F-801A-4D59-B8B5-47212F8A9AE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityDistrictJsonBLL", "CityDistrictJsonBLL\CityDistrictJsonBLL.csproj", "{BF6066D6-714E-4D34-B00D-B450B83601B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CityDistrictJsonBLL", "CityDistrictJsonBLL\CityDistrictJsonBLL.csproj", "{BF6066D6-714E-4D34-B00D-B450B83601B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
