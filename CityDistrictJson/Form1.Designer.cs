@@ -31,8 +31,8 @@ namespace CityDistrictJson
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.cityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.districtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchCityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.districtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchDistrictToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -57,6 +57,13 @@ namespace CityDistrictJson
             this.cityToolStripMenuItem.Size = new System.Drawing.Size(48, 24);
             this.cityToolStripMenuItem.Text = "City";
             // 
+            // searchCityToolStripMenuItem
+            // 
+            this.searchCityToolStripMenuItem.Name = "searchCityToolStripMenuItem";
+            this.searchCityToolStripMenuItem.Size = new System.Drawing.Size(165, 26);
+            this.searchCityToolStripMenuItem.Text = "Search City";
+            this.searchCityToolStripMenuItem.Click += new System.EventHandler(this.searchCityToolStripMenuItem_Click);
+            // 
             // districtToolStripMenuItem
             // 
             this.districtToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -65,18 +72,12 @@ namespace CityDistrictJson
             this.districtToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
             this.districtToolStripMenuItem.Text = "District";
             // 
-            // searchCityToolStripMenuItem
-            // 
-            this.searchCityToolStripMenuItem.Name = "searchCityToolStripMenuItem";
-            this.searchCityToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.searchCityToolStripMenuItem.Text = "Search City";
-            this.searchCityToolStripMenuItem.Click += new System.EventHandler(this.searchCityToolStripMenuItem_Click);
-            // 
             // searchDistrictToolStripMenuItem
             // 
             this.searchDistrictToolStripMenuItem.Name = "searchDistrictToolStripMenuItem";
             this.searchDistrictToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.searchDistrictToolStripMenuItem.Text = "Search District";
+            this.searchDistrictToolStripMenuItem.Click += new System.EventHandler(this.searchDistrictToolStripMenuItem_Click);
             // 
             // Form1
             // 

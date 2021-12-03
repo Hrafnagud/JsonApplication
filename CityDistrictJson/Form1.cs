@@ -31,5 +31,20 @@ namespace CityDistrictJson
             this.LayoutMdi(MdiLayout.TileVertical);
 
         }
+
+        private void searchDistrictToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (this.ActiveMdiChild != null)
+            {
+                this.ActiveMdiChild.Hide();
+
+            }
+            FormDistrictsBelongsToCity formDistricts = new FormDistrictsBelongsToCity();
+            formDistricts.MdiParent = this;
+            formDistricts.Show();
+
+            this.LayoutMdi(MdiLayout.TileVertical);
+
+        }
     }
 }
